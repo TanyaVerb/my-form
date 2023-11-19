@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Заявка на работу в зоопарк</title>
+	</head>
+	<body>
+        <h1 align="center"> Заявка на работу в зоопарк</h1>
+        <p><h4><em>Пожалуйста, заполните форму. Обязательные поля помечены *</em></h4></p>
+		<form action="#" method="post" enctype="multipart/form-data" name="form-name">
+			<p><fieldset>
+				<legend>Общая информация</legend>
+				<label for="name">Введите имя *</label>
+				<input type="text" required name="name" placeholder="Имя" />
+				<label for="name">Введите фамилию *</label>
+				<input type="text" required name="name" placeholder="Фамилия" />
+				<label for="name">Введите отчество *</label>
+				<input type="text" required name="name" placeholder="Отчество" />
+				<label for="name">Дата рождения </label>
+				<input type="date"  />
+			</fieldset></p>
+            <p><fieldset> 
+                <legend>Ваш пол: </legend>
+                <p><label>
+                    <input checked type="radio" name="group1">Мужчина
+                </label> </p>
+                <p><label>
+                    <input type="radio" name="group1">Женщина
+                </label> </p>
+            </fieldset></p>
+	
+            <p><fieldset> 
+                <legend>Семейное положение:</legend>
+                <p><label>
+                    <input checked type="radio" name="group2">Женат/Замужем
+                </label> </p>
+                <p><label>
+                    <input type="radio" name="group2">Холост/Не замужем
+                </label></p>
+            </fieldset></p>
+
+            <p><fieldset>
+             <legend>Контактная информация *</legend>
+				<label for="name">Введите телефон</label>
+				<input type="tel" required />
+				<label for="name">Введите email</label>
+				<input type="email" required />   
+            </fieldset></p>
+
+            <p><fieldset>
+            <legend>Ваши увлечения</legend>
+				<p><input type="checkbox"  />
+				<label for="name">Путешествия и туризм</label></p>
+				<p><input type="checkbox"  />
+				<label for="name">Компьютер</label></p>
+				<p><input type="checkbox" />                  
+                <label for="name">Чтение книг</label></p>
+                <p><input type="checkbox"  />
+				<label for="name">Спорт</label></p>
+				<p><input type="checkbox" />                  
+                <label for="name">Творчество</label></p>
+                <p><input type="checkbox" /> 
+                <label for="name">Другое</label>  
+                <input type="text" name="name" />               
+            </fieldset></p>
+
+            <p><fieldset> <legend>Опыт работы в зоопарке *</legend>
+            <p><input type="range" required min="0" max="20" list="rangeList"> <span id="rangeValue">20</span></p>
+                <datalist id="rangeList">
+                <option value="0" label="5">
+                <option value="5" label="5">
+                <option value="10" label="10">
+                <option value="15" label="15">
+                <option value="20" label="20">
+                </datalist>
+            </fieldset></p>
+   
+            <p> <fieldset>
+            <legend>Ваше фото *</legend>
+            <p><label for="name">Прикрепить фото</label>
+            <input type="file" required name="photo"></p>
+            </fieldset></p>
+ 
+            <div> 
+                <p><input type="reset" value="Очистить">
+                <input type="submit" value="Отправить"></p>
+            </div>
+
+		</form>
+	</body>
+</html>
+п
